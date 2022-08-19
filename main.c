@@ -5,7 +5,7 @@
 int main () {
    char command[150];
 
-   strcpy( command, "tmux new  -d -s world && tmux new -d -s other && tmux send -t world.0 'cd /home/$USER/spens/web-minecraft/java/bukkit_command && ./run_unix.sh' ENTER && tmux send -t other.0 'cd /home/$USER/spens/web-minecraft/java/bungee_command && ./run_unix.sh' ENTER" );
+   strcpy( command, "tmux new  -d -s world && tmux new -d -s other && tmux send -t world.0 'cd /home/$USER/java/bukkit_command && ./run_unix.sh' ENTER && tmux send -t other.0 'cd /home/$USER/java/bungee_command && ./run_unix.sh' ENTER" );
    system(command);
 
    return(0);
